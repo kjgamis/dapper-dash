@@ -2,7 +2,15 @@ cmake_minimum_required(VERSION 3.27)
 project(dapper_dash)
 
 set(CMAKE_CXX_STANDARD 17)
-set(SOURCE_FILES src/main.cpp)
+set(SOURCE_FILES src/main.cpp
+  src/Utils.h
+  src/Cookie.cpp
+  src/Cookie.h
+  src/Dog.cpp
+  src/Dog.h
+  src/Engine.cpp
+  src/Engine.h
+)
 
 add_executable(${PROJECT_NAME} ${SOURCE_FILES})
 
