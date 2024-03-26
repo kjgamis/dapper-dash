@@ -4,8 +4,11 @@
 
 #include "Cookie.h"
 
+sf::Texture Cookie::cookieTexture;
+
 Cookie::Cookie() {
   cookieTexture.loadFromFile("../assets/cookie.png");
+  cookieSprite.setTexture(cookieTexture);
   cookieSprite.setScale(0.1f, 0.1f);
 
   pos.x = rand() % windowWidth - cookieSprite.getLocalBounds().width * cookieSprite.getScale().x;

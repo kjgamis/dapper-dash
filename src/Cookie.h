@@ -11,9 +11,9 @@
 #include "Utils.h"
 
 class Cookie {
-  sf::Texture cookieTexture;
   sf::Sprite cookieSprite;
   sf::Vector2f pos;
+  static sf::Texture cookieTexture;
 public:
   Cookie();
   sf::Sprite getSprite() const;
