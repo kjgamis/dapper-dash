@@ -1,7 +1,6 @@
 #include "Engine.h"
 #include "Utils.h"
 #include "Cookie.h"
-#include "Dog.h"
 
 const sf::Time Engine::TimePerFrame = sf::seconds(1.f/24.f);
 
