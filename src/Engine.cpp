@@ -32,6 +32,15 @@ void Engine::input() {
   } else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down)) {
     dapper.moveDown();
   }
+
+  for (auto cookie = cookies.begin(); cookie != cookies.end();) {
+    if (checkCollision(dapper, *cookie)) {
+      cookie = cookies.erase(cookie);
+      score.increment();
+    } else {
+      ++cookie;
+    }
+  }
 }
 
 void Engine::draw() {
