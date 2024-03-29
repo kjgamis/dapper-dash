@@ -49,6 +49,11 @@ void Engine::draw() {
     cookie.render(window);
   }
   dapper.render(window);
+
+  // TODO: Draw the score
+  scoreText.setString("Score: " + std::to_string(score.getScore()));
+  window.draw(scoreText);
+
   window.display();
 }
 

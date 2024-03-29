@@ -5,6 +5,7 @@
 #include <vector>
 #include "Dog.h"
 #include "Cookie.h"
+#include "Score.h"
 
 class Engine {
   sf::Vector2f resolution;
@@ -14,6 +15,11 @@ class Engine {
 
   std::vector<Cookie> cookies;
   Dog dapper;
+
+  // TODO: Add a Score object
+  Score score;
+  sf::Font font;
+  sf::Text scoreText;
 public:
   Engine();
   void input();

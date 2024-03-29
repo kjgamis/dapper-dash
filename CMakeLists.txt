@@ -10,6 +10,8 @@ set(SOURCE_FILES src/main.cpp
   src/Dog.h
   src/Engine.cpp
   src/Engine.h
+  src/Score.cpp
+  src/Score.h
 )
 
 add_executable(${PROJECT_NAME} ${SOURCE_FILES})
